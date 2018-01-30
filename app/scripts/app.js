@@ -11,6 +11,11 @@
         url: '/',
         controller: 'HomeCtrl as home',
         templateUrl: '/templates/home.html'
+      })
+      .state('finished', {
+        url: '/finished',
+        controller: 'FinishedCtrl as finished',
+        templateUrl: '/templates/finished.html'
       });
     }
 

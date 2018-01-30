@@ -1,0 +1,8 @@
+<div class='item-list'>
+  <h1>Task History</h1>
+  <div ng-repeat="item in finished.items">
+    <div ng-show="finished.expire(item)">
+      <h2>{{ item.name }} <span>Completed: {{item.completed}}</span></h2>
+    </div>
+  </div>
+</div>

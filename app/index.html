@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
 </head>
 <body>
+    <nav class="navbar">
+      <a ui-sref="home" class='navi'>Current Tasks</a>
+      <a ui-sref="finished">Task History</a>
+    </nav>
     <ui-view></ui-view>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
@@ -27,6 +31,7 @@
     </script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/controllers/FinishedCtrl.js"></script>
     <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
     <script src="/scripts/services/Item.js"></script>
 </body>

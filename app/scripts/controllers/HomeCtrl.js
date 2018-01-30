@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl($uibModal, Item, $timeout) {
+    function HomeCtrl($uibModal, Item) {
 
       this.items = Item.all;
 
@@ -19,7 +19,7 @@
         if(item.createdAt < Date.now() - 604800000) {
           item.expired = true;
         };
-        if(item.expired === true) {
+        if(item.expired === true || item.completed === true) {
           return true;
         }
       }
