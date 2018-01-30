@@ -18,7 +18,7 @@
 
 .item-list h3{
   border-bottom: 1px solid #AAAAAA;
-  padding-left: 40px;
+  padding-left: 60px;
   padding-bottom: 20px;
 }
 
@@ -42,12 +42,12 @@ input {
   width: 400px;
 }
 
-select {
+select .todo{
   font-size: 16px;
   height: 56px;
 }
 
-button {
+button .todo {
   float: right;
   font-size: 16px;
   height: 56px;
@@ -56,4 +56,9 @@ button {
 
 h2 {
   padding-left: 40px;
+}
+
+.comp {
+  float: left;
+  height: 30px;
 }

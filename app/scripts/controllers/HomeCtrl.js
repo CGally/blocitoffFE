@@ -7,6 +7,10 @@
           des.value = '';
       };
 
+      this.deleteToDo = function(item) {
+        Item.confirmCompleted(item)
+      }
+
       this.expire = function(item) {
         if(item.createdAt < Date.now() - 604800000) {
           item.expired = true;

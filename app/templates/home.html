@@ -4,27 +4,30 @@
       <h2>Create New Task</h2>
       <form ng-submit="home.createToDo(description, priority)">
           <input id='des' ng-model="description" placeholder='Enter description'/>
-          <select ng-model="priority">
+          <select class='todo' ng-model="priority">
             <option disabled selected value>Select priority level</option>
             <option value='Low' selected>Low</option>
             <option value='Medium'>Med</option>
             <option value='High'>High</option>
           </select>
-          <button type="submit">Create Task</button>
+          <button class='todo' type="submit">Create Task</button>
       </form>
   </div>
   <div ng-repeat="item in home.items | filter:{priority:'High'}">
     <div ng-hide="home.expire(item)">
-      <h3>{{ item.description }}<span>created: {{ item.createdAt | date: 'short'}}</br>expires: {{ item.createdAt + 604800000 | date: 'short'}}</br>priority: {{item.priority}}</span></h3>
+      <button class='comp' ng-click="home.deleteToDo(item)">Done</button>
+      <h3>{{ item.description }}<span>created: {{ item.createdAt | date: 'short'}}</br>expires: {{ item.createdAt + 604800000 | date: 'short'}}</br>priority: {{item.priority}}</br></span></h3>
     </div>
   </div>
   <div ng-repeat="item in home.items | filter:{priority:'Medium'}">
     <div ng-hide="home.expire(item)">
+      <button class='comp' ng-click="home.deleteToDo(item)">Done</button>
       <h3>{{ item.description }}<span>created: {{ item.createdAt | date: 'short'}} </br>expires: {{ item.createdAt + 604800000 | date: 'short'}}</br>priority: {{item.priority}}</span></h3>
     </div>
   </div>
   <div ng-repeat="item in home.items | filter:{priority:'Low'}">
     <div ng-hide="home.expire(item)">
+      <button class='comp' ng-click="home.deleteToDo(item)">Done</button>
       <h3>{{ item.description }}<span>created: {{ item.createdAt | date: 'short'}} </br>expires: {{ item.createdAt + 604800000 | date: 'short'}}</br>priority: {{item.priority}}</span></h3>
     </div>
   </div>

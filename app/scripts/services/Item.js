@@ -16,7 +16,11 @@
           priority: priority
         });
     };
-
+    Item.confirmCompleted = function(item) {
+      item.completed = true;
+      item.active = false;
+      items.$save(item)
+    }
     return Item;
   }
 
