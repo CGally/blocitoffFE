@@ -1,0 +1,47 @@
+.modal {
+  background: rgba(75,227,232,1);
+  background: -moz-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(75,227,232,1)), color-stop(100%, rgba(8,240,155,1)));
+  background: -webkit-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
+  background: -o-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
+  background: -ms-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
+  background: linear-gradient(to right, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4be3e8', endColorstr='#08f09b', GradientType=1 );
+  box-shadow: 2px 2px 4px #888888;
+  position: fixed;
+  top: 40%;
+  left: 35%;
+  height: 100px;
+  width: 300px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  text-align: left;
+  z-index: 3;
+}
+
+.modal-title {
+  display: block;
+  font-size: 20px;
+  margin: 5px 0 5px 0;
+  width: 50%;
+}
+
+.modal-label {
+  display: block;
+  font-size: 100%;
+  margin: 5px 0 5px 0;
+  width: 90%;
+}
+
+.modal-input {
+  display: block;
+  margin: 5px 0 5px 0;
+  width: 90%;
+}
+
+.modal-button {
+  display: inline;
+  margin: 5px 0 5px 0;
+  width: 45%;
+}

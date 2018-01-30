@@ -1,0 +1,8 @@
+<div class ="modal">
+    <h3 class="my-modal-title">Create New To-do</h3>
+    <form class="modal-text" ng-submit="modal.createToDo(name)">
+        <input class ='modal-input' ng-model="name" placeholder='Enter To-to' autofocus/>
+        <button class ='modal-button' type="submit">Create To-do</button>
+        <button class ='modal-button' type="button" ng-click="modal.cancel()">Cancel</button>
+    </form>
+</div>

@@ -2,8 +2,10 @@
 <html ng-app="blocItOffFE">
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blocitoff</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
 </head>
 <body>
     <ui-view></ui-view>
@@ -11,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script>
       var config = {
         apiKey: "AIzaSyAjTvhbcOBhxRJIJgJD6xTZyiiKYh3mlqo",
@@ -24,5 +27,7 @@
     </script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
+    <script src="/scripts/services/Item.js"></script>
 </body>
 </html>
