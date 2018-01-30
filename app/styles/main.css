@@ -7,8 +7,7 @@
   background-color: #EEEEEE;
   box-shadow: 2px 2px 4px #888888;
   margin: auto;
-  padding-bottom: 50px;
-  width: 60%;
+  width: 700px;
 }
 
 .item-list h1{
@@ -17,10 +16,10 @@
   text-align: center;
 }
 
-.item-list h2{
+.item-list h3{
   border-bottom: 1px solid #AAAAAA;
   padding-left: 40px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .task-button{
@@ -32,48 +31,29 @@
 
 span {
   float: right;
-  font-size: 14px;
+  font-size: 12px;
   padding-right: 40px;
   text-align: right;
 }
 
-.modal {
-  background: lightblue;
-  box-shadow: 2px 2px 4px #888888;
-  position: fixed;
-  top: 40%;
-  left: 40%;
-  height: 100px;
-  width: 300px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 30px;
-  text-align: left;
-  z-index: 3;
+input {
+  font-size: 16px;
+  height: 50px;
+  width: 400px;
 }
 
-.modal-title {
-  display: block;
-  font-size: 20px;
-  margin: 5px 0 5px 0;
-  width: 50%;
+select {
+  font-size: 16px;
+  height: 56px;
 }
 
-.modal-label {
-  display: block;
-  font-size: 100%;
-  margin: 5px 0 5px 0;
-  width: 90%;
+button {
+  float: right;
+  font-size: 16px;
+  height: 56px;
+  width: 131px;
 }
 
-.modal-input {
-  display: block;
-  margin: 5px 0 5px 0;
-  width: 90%;
-}
-
-.modal-button {
-  display: inline;
-  margin: 5px 0 5px 0;
-  width: 45%;
+h2 {
+  padding-left: 40px;
 }

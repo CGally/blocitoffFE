@@ -6,12 +6,14 @@
 
     Item.all = items;
 
-    Item.createItem = function(name) {
+    Item.createItem = function(description, priority) {
         items.$add({
-          name: name,
+          description: description,
           createdAt: Date.now(),
           completed: false,
-          expired: false
+          expired: false,
+          active: true,
+          priority: priority
         });
     };
 

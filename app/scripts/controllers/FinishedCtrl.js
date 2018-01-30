@@ -4,7 +4,7 @@
       this.items = Item.all;
 
       this.expire = function(item) {
-        if(item.expired === true || item.completed === true) {
+        if(item.active === false) {
           return true;
         }
       }
