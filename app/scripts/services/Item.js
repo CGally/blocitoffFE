@@ -7,7 +7,12 @@
     Item.all = items;
 
     Item.createItem = function(name) {
-        items.$add(name);
+        items.$add({
+          name: name,
+          createdAt: Date.now(),
+          completed: false,
+          expired: false
+        });
     };
 
     return Item;

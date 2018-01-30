@@ -2,6 +2,8 @@
   <button class='task-button' ng-click="home.open()">Add To-do</button>
   <h1>Current Tasks</h1>
   <div ng-repeat="item in home.items">
-    <h2>{{ item.$value }}</h2>
+    <div ng-hide="home.expire(item)">
+      <h2>{{ item.name }} <span>created: {{ item.createdAt | date: 'short'}} </br>expires: {{ item.createdAt + 604800000 | date: 'short'}}</span></h2>
+    </div>
   </div>
 </div>

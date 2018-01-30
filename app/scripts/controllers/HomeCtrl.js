@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl($uibModal, Item) {
+    function HomeCtrl($uibModal, Item, $timeout) {
 
       this.items = Item.all;
 
@@ -14,6 +14,15 @@
           keyboard: true,
         });
       };
+
+      this.expire = function(item) {
+        if(item.createdAt < Date.now() - 604800000) {
+          item.expired = true;
+        };
+        if(item.expired === true) {
+          return true;
+        }
+      }
     }
 
     angular
