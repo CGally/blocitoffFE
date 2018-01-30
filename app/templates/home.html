@@ -1,5 +1,7 @@
-<h1>Bloc It Off</h1>
-<button ng-click="home.open()">Add Item</button>
-<div ng-repeat="item in home.items">
+<div class='item-list'>
+  <button class='task-button' ng-click="home.open()">Add To-do</button>
+  <h1>Current Tasks</h1>
+  <div ng-repeat="item in home.items">
     <h2>{{ item.$value }}</h2>
+  </div>
 </div>

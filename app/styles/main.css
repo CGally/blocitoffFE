@@ -1,16 +1,36 @@
+.item-list {
+  background-color: #EEEEEE;
+  box-shadow: 2px 2px 4px #888888;
+  margin: auto;
+  padding-bottom: 50px;
+  width: 60%;
+}
+
+.item-list h1{
+  background-color: #AAAAAA;
+  padding: 20px;
+  text-align: center;
+}
+
+.item-list h2{
+  border-bottom: 1px solid #AAAAAA;
+  padding-left: 40px;
+  padding-bottom: 15px;
+}
+
+.task-button{
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 28px;
+}
+
 .modal {
-  background: rgba(75,227,232,1);
-  background: -moz-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(75,227,232,1)), color-stop(100%, rgba(8,240,155,1)));
-  background: -webkit-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  background: -o-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  background: -ms-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  background: linear-gradient(to right, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4be3e8', endColorstr='#08f09b', GradientType=1 );
+  background: lightblue;
   box-shadow: 2px 2px 4px #888888;
   position: fixed;
   top: 40%;
-  left: 35%;
+  left: 40%;
   height: 100px;
   width: 300px;
   padding-left: 15px;
