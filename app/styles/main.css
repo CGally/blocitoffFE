@@ -42,12 +42,12 @@ input {
   width: 400px;
 }
 
-select .todo{
+.sel {
   font-size: 16px;
   height: 56px;
 }
 
-button .todo {
+.todo {
   float: right;
   font-size: 16px;
   height: 56px;
