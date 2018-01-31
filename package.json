@@ -4,7 +4,7 @@
   "description": "Starter project for the Bloc Frontend Web Development",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bloc/bloc-frontend-project-starter"
+    "url": "https://github.com/CGally/blocitoffFE"
   },
   "main": "server.js",
   "scripts": {
