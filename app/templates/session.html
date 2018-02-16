@@ -1,0 +1,19 @@
+<div class='item-list'>
+  <h1>Sign Up</h1>
+  <div>
+      <form ng-submit="session.createUser(name, pass, confirm)">
+          <input ng-model="name" placeholder='Enter email'/>
+          <input type="password" ng-model="pass" placeholder='Enter password'/>
+          <input type="password" ng-model="confirm" placeholder='Confirm password'/>
+          <button class='todo' type="submit">Sign Up</button>
+      </form>
+  </div>
+  <h1>Sign In</h1>
+  <div>
+      <form ng-submit="session.setUser(email, password)">
+          <input ng-model="email" placeholder='Enter email'/>
+          <input type="password" ng-model="password" placeholder='Enter password'/>
+          <button class='todo' type="submit">Sign In</button>
+      </form>
+  </div>
+</div>

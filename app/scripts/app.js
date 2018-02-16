@@ -16,10 +16,15 @@
         url: '/finished',
         controller: 'FinishedCtrl as finished',
         templateUrl: '/templates/finished.html'
+      })
+      .state('session', {
+        url: '/session',
+        controller: 'SessionCtrl as session',
+        templateUrl: '/templates/session.html'
       });
     }
 
   angular
-    .module('blocItOffFE', ['ui.router', 'firebase','ui.bootstrap'])
+    .module('blocItOffFE', ['ui.router', 'Devise', 'ngResource'])
     .config(config);
 })();

@@ -16,19 +16,19 @@
   <div ng-repeat="item in home.items | filter:{priority:'High'}">
     <div ng-hide="home.expire(item)">
       <button class='comp' ng-click="home.deleteToDo(item)">Done</button>
-      <h3>{{ item.description }}<span>created: {{ item.createdAt | date: 'short'}}</br>expires: {{ item.createdAt + 604800000 | date: 'short'}}</br>priority: {{item.priority}}</br></span></h3>
+      <h3>{{ item.description }}<span>created: {{ item.created_at + 100 | date: 'short'}}</br>expires: after 7 days</br>priority: {{item.priority}}</br></span></h3>
     </div>
   </div>
   <div ng-repeat="item in home.items | filter:{priority:'Medium'}">
     <div ng-hide="home.expire(item)">
       <button class='comp' ng-click="home.deleteToDo(item)">Done</button>
-      <h3>{{ item.description }}<span>created: {{ item.createdAt | date: 'short'}} </br>expires: {{ item.createdAt + 604800000 | date: 'short'}}</br>priority: {{item.priority}}</span></h3>
+      <h3>{{ item.description }}<span>created: {{ item.created_at + 100 | date: 'short'}} </br>expires: after 7 days</br>priority: {{item.priority}}</span></h3>
     </div>
   </div>
   <div ng-repeat="item in home.items | filter:{priority:'Low'}">
     <div ng-hide="home.expire(item)">
       <button class='comp' ng-click="home.deleteToDo(item)">Done</button>
-      <h3>{{ item.description }}<span>created: {{ item.createdAt | date: 'short'}} </br>expires: {{ item.createdAt + 604800000 | date: 'short'}}</br>priority: {{item.priority}}</span></h3>
+      <h3>{{ item.description }}<span>created: {{ item.created_at + 100 | date: 'short'}} </br>expires: after 7 days</br>priority: {{item.priority}}</span></h3>
     </div>
   </div>
 </div>

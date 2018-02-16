@@ -11,27 +11,20 @@
     <nav class="navbar">
       <a ui-sref="home" class='navi'>Current Tasks</a>
       <a ui-sref="finished">Task History</a>
+      <a ui-sref="session">Sign Up</a>
     </nav>
     <ui-view></ui-view>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
-    <script>
-      var config = {
-        apiKey: "AIzaSyAjTvhbcOBhxRJIJgJD6xTZyiiKYh3mlqo",
-        authDomain: "blocitofffe.firebaseapp.com",
-        databaseURL: "https://blocitofffe.firebaseio.com",
-        projectId: "blocitofffe",
-        storageBucket: "",
-        messagingSenderId: "141763937274"
-      };
-      firebase.initializeApp(config);
-    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-resource.min.js"></script>
+    <script src="/components/AngularDevise/lib/devise.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/controllers/FinishedCtrl.js"></script>
+    <script src="/scripts/controllers/SessionCtrl.js"></script>
+    <script src="/scripts/services/ItemResource.js"></script>
     <script src="/scripts/services/Item.js"></script>
+    <script src="/scripts/services/User.js"></script>
 </body>
 </html>
